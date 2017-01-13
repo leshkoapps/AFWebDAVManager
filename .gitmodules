@@ -1,6 +1,6 @@
 [submodule "AFNetworking"]
-	path = AFNetworking
-	url = git@github.com:AFNetworking/AFNetworking.git
+path = AFNetworking
+url=https://github.com/leshkoapps/AFNetworking.git
 [submodule "Ono"]
-	path = Ono
-	url = git@github.com:mattt/Ono.git
+path = Ono
+url=https://github.com/leshkoapps/Ono.git
