@@ -105,10 +105,10 @@ static NSString * AFWebDAVStringForLockType(AFWebDAVLockType type) {
     __weak __typeof(self) weakself = self;
     [self MKCOL:URLString success:^(__unused AFHTTPRequestOperation *operation, NSURLResponse *response) {
         if (completionHandler) {
-            if ([NSStringFromClass([response class]) isEqualToString:@"_NSZeroData"]) {
-                completionHandler(nil, nil);
-            } else {
+            if ([response respondsToSelector:@selector(URL)]) {
                 completionHandler([response URL], nil);
+            } else {
+                completionHandler(nil, nil);
             }
         }
     } failure:^(__unused AFHTTPRequestOperation *operation, NSError *error) {
