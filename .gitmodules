@@ -1,6 +1,1 @@
-[submodule "AFNetworking"]
-path = AFNetworking
-url=https://github.com/leshkoapps/AFNetworking.git
-[submodule "Ono"]
-path = Ono
-url=https://github.com/leshkoapps/Ono.git
+
